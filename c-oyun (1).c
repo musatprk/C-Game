@@ -1,18 +1,61 @@
 #include <stdio.h>
+/*
+  
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWX000KXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMWNK0kdoooodxOKNWMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMWXKOxooooooooolooxk0XWMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMWNX0kdoooloooooooooooooodxOKNWMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMWNKOxooolooooooooooooooooooolooxk0XWMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMWNX0kdollooloooooooooooooooooooooloooodk0KNWMMMMMMMMMMMMM
+MMMMMMMMMMWNKOxoollooooooloooooooooooooooooooooooooooooxOKNWMMMMMMMMMM
+MMMMMMMWX0kdoooooooooooooooooooooooooooooooooooooooooooooodk0XNMMMMMMM
+MMMMMMNkdoloooooooooooooooooooooooooooooooooooooooooooooooooooxOXWMMMM
+MMMMMMXxooooloooooooooooooooooooooooooooooooooooooooooooooolool:oKWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooolooc;:OWMMM
+MMMMMMXxooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXxooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooolooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooolooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM 
+        _   _   _   _   _   _   _   _     _   _   _   _   _   _    
+       / \ / \ / \ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ 
+      ( n | e | w | - | n | o | d | e ) ( s | o | c | i | a | l )
+       \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXdooooooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMXxooooooooooooooooooooooooooooooooooooooooooooooooooooool;:OWMMM
+MMMMMMXxooolooooooooooooooooooooooooooooooooooooooooooooooooooc;:OWMMM
+MMMMMMW0xoloolooooooooooooooooooooooooooooooooooooooooooooollc;,c0WMMM
+MMMMMMMWXkdollloooooooooooooooooooooooooooooooooooooooollc:;,;:oONMMMM
+MMMMMMMMMWNKOxollloooooooooooooooooooooooooooooooooollc;,,;cdOXNWMMMMM
+MMMMMMMMMMMMMWX0kdolllooooolooooooooooooooooooooolc:;,,:ok0NWMMMMMMMMM
+MMMMMMMMMMMMMMMMWNKOxollloooloooooooooooooooollc:,,;cdOKNWMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMWX0kdollloooooooooooollc:;,,:lx0NWMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMWNKOxollloooooollc:;,;cdOKNWMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMWX0kdolllc:;,,:lx0XWMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNKOdoc:cdkKNWMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNXK0KNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+*/
+
 /* L bulma oyunu
-Oyun 2 oyuncudan oluşur oyuncular sırayla oynamaktaadır Oyun tahtası 7 elemenalı 4 dziden oluşur Oyun başladığında dizilerin değeri 0 dır
-Kullanıcılar kendi sıraları geldiğinde seçtikleri yere 1 veya 2 koayabilirler fakat daha önce giriş yapılan yere tekrar giriş yapamazlar
-l şekli 3 adet aynı sayının aynı sütünda bulunduğu ve bir adet aynı sayının en alt satırda sağ tarfata bulunmasıyla oluşur örnek 1
+Oyun 2 oyuncudan oluÅŸur oyuncular sÄ±rayla oynamaktaadÄ±r Oyun tahtasÄ± 7 elemenalÄ± 4 dziden oluÅŸur Oyun baÅŸladÄ±ÄŸÄ±nda dizilerin deÄŸeri 0 dÄ±r
+KullanÄ±cÄ±lar kendi sÄ±ralarÄ± geldiÄŸinde seÃ§tikleri yere 1 veya 2 koayabilirler fakat daha Ã¶nce giriÅŸ yapÄ±lan yere tekrar giriÅŸ yapamazlar
+l ÅŸekli 3 adet aynÄ± sayÄ±nÄ±n aynÄ± sÃ¼tÃ¼nda bulunduÄŸu ve bir adet aynÄ± sayÄ±nÄ±n en alt satÄ±rda saÄŸ tarfata bulunmasÄ±yla oluÅŸur Ã¶rnek 1
 																																 1
 																																 1 1	
-L yi oluşturan son elemanı ekleyen ilk oyuncu oyunu kazanır
+L yi oluÅŸturan son elemanÄ± ekleyen ilk oyuncu oyunu kazanÄ±r
 
 */
 int sira = 1;
 int dizi[4][7];
 int i;
 
-void ekranabas() // buarada dizinin içindeki değerler ekrana basılır 
+void ekranabas() // buarada dizinin iÃ§indeki deÄŸerler ekrana basÄ±lÄ±r 
 {
 	for (i = 6; i >= 0; i--)
 	{
@@ -21,7 +64,7 @@ void ekranabas() // buarada dizinin içindeki değerler ekrana basılır
 	printf("   %d   %d   %d   %d \n", 0, 1, 2, 3);
 }
 
-int isL(int x, int y, int girilendeger) // burada girilen değerlerin kurala uygun olarak bir L oluşturup oluşturmadığını kontrol edern
+int isL(int x, int y, int girilendeger) // burada girilen deÄŸerlerin kurala uygun olarak bir L oluÅŸturup oluÅŸturmadÄ±ÄŸÄ±nÄ± kontrol edern
 {
 	if (x < 3 && y > 1)
 	{
@@ -54,7 +97,7 @@ int isL(int x, int y, int girilendeger) // burada girilen değerlerin kurala uygu
 	return 0;
 }
 
-void siradegistir() // burada oyuncu sıra değişimi yapılır
+void siradegistir() // burada oyuncu sÄ±ra deÄŸiÅŸimi yapÄ±lÄ±r
 {
 	if (sira == 1)
 	{
@@ -65,7 +108,7 @@ void siradegistir() // burada oyuncu sıra değişimi yapılır
 		sira = 1;
 	}
 }
-int sayigecerlimi(int x, int y) // burda girilen değeri önceden dolu olup olmadığı kontrol edilir
+int sayigecerlimi(int x, int y) // burda girilen deÄŸeri Ã¶nceden dolu olup olmadÄ±ÄŸÄ± kontrol edilir
 {
 	if (x >= 0 && x < 4 && y >= 0 && y < 7 && dizi[x][y] == 0)
 	{
@@ -77,7 +120,7 @@ int sayigecerlimi(int x, int y) // burda girilen değeri önceden dolu olup olmadı
 	}
 }
 
-int oyunbs() // oyun başlatılır kullanıcıdan değer alıp gerekli fonksiyonlar çağırılır
+int oyunbs() // oyun baÅŸlatÄ±lÄ±r kullanÄ±cÄ±dan deÄŸer alÄ±p gerekli fonksiyonlar Ã§aÄŸÄ±rÄ±lÄ±r
 {
 	int temp = 0;
 	int xkordi;
